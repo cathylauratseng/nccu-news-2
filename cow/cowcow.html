@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="cow.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
+
+	<style>
+		.animated {
+			animation-fill-mode: inherit;
+			animation-play-state: inherit;
+		}
+		.animation-block {
+			animation-fill-mode: backwards;
+			animation-play-state: paused;
+		}
+		.to-animate {
+			animation-fill-mode: both;
+			animation-play-state: running;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-container">
+		<article>
+			<h1>重塑消費者認知 獨立牧場積極創造品牌價值</h1>
+			<div class="intro">
+				<p class="reporters">【專題記者邱舒恬、陳玟蓓、汪芝瑜、吳禹潼、邱品懿綜合報導】</p>
+				<p>連鎖咖啡店「路易莎」於上月20日宣布將改與味全乳品加工廠合作，消息一出馬上引發民眾拒喝。對此路易莎澄清生乳乳源不變，同樣是與南部酪農簽訂合作契約，只是生產過程的殺菌、填充及包裝從光泉改成委託味全，仍然難逃外界的拒買聲浪，因此在公告發出的不到一天中，路易莎又緊急撤回與味全合作的決定。</p>
+			</div>
+
+			<p>味全為擁有合格加工廠、有資格申請鮮乳標章及CAS優良農產品標章的大品牌，但是坊間對味全鮮乳產品中是否有添加物的臆測頻傳，也是這次路易莎拒買事件的成因之一。相比之下，號稱乳源單一但不具國家認證的小農鮮乳卻慢慢在各通路、網站上販賣，雖然價格較高昂卻常常銷售一空，形成有趣對比。</p>
+			<p>目前酪農業可分為大廠與獨立牧場，台灣的生乳近九成都被三大品牌味全、統一、光泉收購，酪農個體戶（簡稱小農）自創品牌較難與大廠牌抗衡，市售鮮乳品牌稀少使得消費者選擇數有限，且農委會的預算無法補助小廠發展，再加上外國乳品隨著經濟協定的簽署進入我國等問題，都是酪農業和食品安全的隱憂。</p>
+
+			<div id="for-shop-animation" class="shop-animation animation-block">
+				<img class="shop animated fadeInLeft" src="shop4.png" style="animation-delay: .5s">
+				<img class="shop animated fadeInLeft" src="shop2.png" style="animation-delay: .9s">
+				<img class="shop animated fadeInLeft" src="shop3.png" style="animation-delay: 1.3s">
+				<p>超商通路以三大廠商鮮乳為主</p>
+			</div>
+
+			<h3>酪農業門檻高　新血難投入</h3>
+			<p>台灣位在副熱帶地區天氣潮濕酷熱，再加上土地面積狹小，並非最適合乳牛這種寒帶動物的生長環境，使酪農業的經營多了許多額外成本，因此在產業發展上有先天的困難。</p>
+			<p>「現在在台灣要經營一個乳牛場成本很高，光是一頭牛就要價十幾萬，再加上機器設備、土地、建築，資本隨便算都要三五千萬起跳，」國立台灣大學動物科學系教授徐濟泰舉例，這些成本都是從祖父輩就開始慢慢奠定下來的，因此飼養場的經營大多是代代相傳，但這個模式已逐漸式微。酪農工作時間必須配合乳牛的習性，每隔十二小時就要擠奶巡視一次，徐濟泰表示現代人重視生活品質，較難以接受半天一循環的工作性質，所以願意繼續經營酪農業的年輕世代不多。管理結構老化、下一代年輕人不願意銜接造成許多退休酪農將牧場轉手變賣，是現今酪農業所面臨最直接的問題。</p>
+			
+			<div class="chart-box">
+				<canvas id="myChart-1"></canvas>
+				<p style="font-size: .6rem; opacity: .8; margin-top: 1rem">酪農的一天（數字為24小時之百分比）</p>
+			</div>
+			
+			<p>根據農委會統計，目前酪農業平均投入產出比率為 1.18，表示每投入 1 元時有 1.18 元產出，利潤並不高。因此飼養場在經營管理方面必須更精準，中華民國酪農協會秘書長吳進隆表示除了提升設備與技術外，餵養上則會針對牛隻需求，在日糧裡精量添加較貴但能提升產乳量的進口玉米、大豆等養分，以期兼顧生乳品質下的情況下，讓乳牛發揮最大產乳潛力、降低生產成本。畢竟，「牧場管理是否良好，會直接反映在乳質上，」國立中興大學動物科學系教授陳彥伯補充。</p>
+			<p>吳進隆也評估，目前大部分飼養場透過自動化機器設備、採行科學化管理方式，應可以應付酪農業缺工的情況 。但他也坦承這些做法會需要更高的經營成本，為了平衡投資報酬率，飼養趨勢只會越來越集中、規模越來越大，也讓加入酪農業的門檻越來越高。</p>
+			<p>因此，酪農業的缺工和高成本的門檻使得產業高度集中化，與過去相比，台灣的酪農戶呈現大幅減少趨勢。根據中華民國乳業協會(簡稱乳協)統計酪農戶在全盛時期，也就是民國80年左右時曾高達一千一百多戶。到了民國104年卻只剩下五百二十七戶，畜養的乳牛頭數和產乳量卻不減反增，高度集中豢養和仰賴科學方法的監測更加強了這股趨勢。</p>
+
+			<div class="chart-box">
+				<canvas id="myChart-2"></canvas>
+				<p style="font-size: .6rem; opacity: .8; margin-top: .5rem">（酪農戶數與乳牛頭數情形表）</p>
+			</div>
+
+			<div id="for-cow-animation" class="cow-animation animation-block">
+				<img src="nene.png" class="animated fadeInDown" style="position: absolute; top:0; left:0; width: 100%; animation-delay: .5s">
+				<img src="back.png" style="position: absolute; bottom: 0; left: 0; width: 100%">
+				<img src="water.png" class="animated fadeInDown" style="position: absolute; width: 5%; top: 40%; left: 22%; animation-delay: 1s">
+				<img src="water.png" class="animated fadeInDown" style="position: absolute; width: 5%; top: 40%; left: 35%; animation-delay: 1s">
+				<img src="water.png" class="animated fadeInDown" style="position: absolute; width: 5%; top: 40%; left: 48%; animation-delay: 1s">
+				<img src="water.png" class="animated fadeInDown" style="position: absolute; width: 5%; top: 40%; left: 61%; animation-delay: 1s">
+				<img src="water.png" class="animated fadeInDown" style="position: absolute; width: 5%; top: 40%; left: 74%; animation-delay: 1s">
+				<img src="water.png" class="animated fadeInDown" style="position: absolute; width: 5%; top: 40%; left: 87%; animation-delay: 1s">
+				<img src="bottle.png" class="animated fadeInUp" style="position: absolute; width: 74%; bottom: 3%; left: 20%; opacity: 0.6; animation-delay: 1.5s">
+			</div>
+
+			<p>另外，乳牛的生長情形與產乳量有絕對的關係，台灣乳牛的日均產乳量約21至22公斤，需要有更佳的培植技術才能達到單隻乳牛27至35公斤的日均產乳量。除了環境涼爽、飼料質量必須兼備之外，因乳牛一天中必須休息12小時，確保每隻乳牛都有躺下休息的空間也成為影響產量的重要因素。</p>
+			<p>徐濟泰說：「要提升牛乳品質的關鍵就是要讓牛過的非常舒服、非常健康。」若沒有適當的活動空間不夠大，乳牛就無法躺下休息，對動物來說是種負擔。他還表示，台灣乳牛的產乳量尚有成長空間，每隻牛的日均產乳量至少有機會能提高到30公斤以上，在不給牛隻過度負荷的情況下，加強選種、飼養管理等培育技術，便可有效提升乳量，如此才是酪農戶的長久經營之道。</p>
+
+			<div class="long-text">
+							<h3>現行認證不利小農　教授籲「創造品牌價值」</h3>
+							<p>近幾年來，由於大廠食安風波不斷，也替許多小農創造商機。但政府對於酪農業的標章規定卻讓規模不大、想自立門戶的小農受到阻礙。
+
+				我國關於鮮乳產品制定了兩種標章，一種是因其外型而被暱稱為「牛頭標」的鮮乳標章，另一種則是CAS優良農產品標章。其實鮮乳標章的設置起源於過去曾發生廠商向酪農收購生乳加工製作後，成品數量卻遠高於加工前的生乳量。經調查發現是因為台灣過去生乳生產量不足，廠商為牟取暴利進口外國奶粉，企圖在沖泡後偽裝成國產鮮奶。
+
+				政府為確保生乳都是來自台灣牧場，便設立了鮮乳標章。但因為鮮乳標章的申請單位僅能為乳品加工廠，這個規範使許多剛起步、規模小的鮮乳品牌無法順利申請。雖然鮮乳標章不直接等於品質優良，但許多小農仍反映這項規定會影響消費者的購買意願，畢竟不是所有消費者都知道鮮乳標章只是政府管控數量的措施；也有小農希望政府能將牧場按飼養環境及照顧方式訂出分級制度、創造出另一種標章讓小農的優質商品更能被消費者看見。
+
+				談到鮮乳標章及部分小農殷殷期盼的牧場分級問題，多位教授皆表示當務之急應該是扭轉企業偷工減料的歪風與教導消費者正確的購物觀念。「我們其實不需要用標章去證明我們的品質。」徐濟泰指出。以紐西蘭為例，他們的鮮奶包裝上不需要附上任何標章貼紙，因為標章所要求的品質早已內化在產品當中。台灣過去因為廠商偷工減料、使用黑心原料造成多起食安風暴，讓消費者不得不以檢驗標章來評斷食品的好壞、購物時也偏向於挑選擁有更多標章的商品。這些送驗的成本卻是增加經營成本的因素之一，對於剛起步的小農來說，規模小又沒有購買加工廠的資本，導致無法申請鮮乳標章、與大廠競爭。
+
+				若消費者希望市場上能有更多選擇，就應該正確認知標章所代表的涵意、自行判斷小農的鮮奶是否值得信任，而小農也應該做出自己的品牌價值、讓民眾對自己產生信心。最重要的是，不論小農或大廠皆必須中規中矩，依循合格流程生產鮮乳，非一味以利益取向，漠視國人健康。陳彥伯強調，「台灣並不缺乏認證標章，關鍵在於消費者對標章有何種程度認知及信心。」
+
+				根據行政院主計總處資料顯示，整個農、林、漁、牧業佔台灣國內生產毛額（Gross Domestic Product,GDP）不到2%，且與其他部門相比，農委會在年度預算的分配也是敬陪末座。雖然小農希望政府能夠撥預算補助、協助牧場依品質劃分等級，如過去曾經辦理、後來停辦的五梅獎認證。但預算是固定的，小農及消費者如果真的希望能夠增加品牌的選擇，也只能向立法委員遊說、增加立法者對食安問題的重視，才可能爭取到更多經費。
+
+				台灣土地狹小寸土寸金，徐濟泰認為台灣絕非沒有發展酪農業的資質，但首先需要改變台灣人重工輕農的觀念，不能總是把資源投入工業生產而忽略台灣農業的潛力。小農所堅持的牧場環境立意固然良善，但其實鮮乳的營養價值還是與加工時的殺菌方法有高度相關。徐濟泰強調，目前許多小農鮮乳的殺菌方式其實和大廠是一樣的，小農除了宣揚自身產品健康以外，也可以從減少碳足跡開始做起，才能為創造更多品牌價值。
+
+				徐濟泰建議以綠肥作物代替進口飼料來降低經營成本。近年來，台灣政府經常在缺水時要求農地休耕、將水資源保留給工業使用，休耕期間農民會接受行政院農業委員會畜產試驗所的輔導，在土地上種植耐旱且生長迅速的綠肥作物如花生藤、油菜。徐濟泰指出，經過研究證實，這些綠肥作物其實也能成為乳牛的飼料，且營養價值不亞於酪農經常向國外進口的苜蓿芽、牧草。若政府能夠輔導農民在休耕時期種植富營養價值的飼料，不但能讓農田免於荒廢、有效利用土地，更能夠大幅降低國內鮮乳的生產成本及碳足跡的累積，讓台灣的鮮奶更有競爭力。
+
+				目前市面上可以看到一些小農品牌以「單一乳源」、「合理收購價格」等特色吸引消費者。陳彥伯解釋單一乳源及多重乳源各有好壞，無法比較孰優孰劣。單一牧場的鮮乳乳源方便管理及追蹤，也能推廣好的牧場所推出的優質鮮奶，而多乳源的鮮乳廠牌則可以分散風險。單一乳源需注意當牧場發生疾病、環境污染等變故時，乳源便被阻斷；而多重乳源則應注意管理，若牧場良莠不齊，乳品品質好壞混雜，便無法凸顯優質牧場的特色。
+
+				至於「合理收購價格」部分，徐濟泰認為改善議價空間是好的想法，但目前的制度也有其維持的必要。現今生乳的收購價格是由酪農戶、廠商及酪農協會、乳業協會等三方代表共同商議，與一般食品如稻米、水果不同，原因就在於台灣鮮奶的生產成本非常高。台灣飼養乳牛的方式為圈養，光是牛隻的基本花費就是千萬起跳，更別提飼料、人力、地租、廠房、送驗等必要支出。
+
+				若讓生乳以自由市場經濟的模式訂定價格而不加以管制，則大部分的消費者將無法負擔台灣的鮮奶，民眾不是尋找替代飲品就是轉而選擇購買國外進口的乳品。乳業協會理事長方清泉解釋，雖然生乳的收購價格無法讓酪農賺取極高的利潤，但由於台灣民眾已習慣飲用鮮奶，為了不讓鮮奶成為價格高昂的奢侈品，政府必須控制價格。
+
+				「加入WTO之後，進口配額量已經給台灣很大的壓力。」中華民國乳業協會秘書長方清泉還舉例，再加上民國102年台灣與紐西蘭簽署經濟協定(ANZTEC)，紐西蘭得以零關稅優惠逐年增加進口鮮乳的配額，台灣鮮乳市場被完全打開。面對一波波強勁的國際競爭，近年來國內小型酪農將飼養場轉型為生態休閒牧場、與加工廠或飲料店合作推出自有品牌。</p>
+			</div>
+
+			<div class="long-text">
+							<h3>獨立牧場轉型自產自銷   鮮乳坊盼培養獸醫人才</h3>
+							<p>嘉義永榮牧場出產的老爹鮮乳是獨立牧場中發展較為順利的，每天大約可以售出1500多瓶鮮乳，牧場以平價行銷的方式推廣，市售價格與一般市面上大廠牌鮮乳無太大差別。牧場負責人曹榮旭於民國91年引進低溫殺菌鮮乳加工法，並在民國93年與交大研究室進行合作研究。研究結果發現，低溫殺菌確實能夠保存較多β乳球蛋白質，提升鮮乳的營養價值，他也認為台灣的物流發展已經足夠保存低溫殺菌的鮮乳，因此應尋求方法保存更多的鮮奶機能性。
+
+				鮮乳坊是目前正興起的新型鮮乳銷售通路，以跟單一牧場合作的方式行銷。鮮乳坊員工柯智元認為必須從生產端開始，並搭配科學化的儀器與管理，才能掌握鮮奶的品質。他也表示鮮乳坊是幫助酪農個體戶加工生乳並且與經銷商洽談上市事宜的平台，與每一個合作的牧場，都秉持不混乳、可溯源的原則。
+
+				鮮乳坊創辦人、獸醫師龔建嘉本身擔任大動物獸醫，並精通牛隻的照護，他坦言目前台灣大動物獸醫的人才的確嚴重不足，所以希望能多培養這領域的新人，因此鮮乳坊每一瓶鮮乳的售價除了鮮乳本身的價格外，也包含了對於台灣酪農業人才和大動物獸醫的培育資本，「讓台灣酪農業永續發展是主要追求的目標。」
+
+				大動物獸醫師的缺乏，從農委會民國103年的統計資料來看，全國執業獸醫師將近五千人中，當中的小動物獸醫約有兩千七百多人，所占比例高達56%；而大動物獸醫卻只有約四百人，僅占8%的比例。 另外，依據財團法人中央畜產會統計，台灣同年的乳牛在養數量約為11萬頭，獸醫與動物的數字比例懸殊，一名獸醫師需照顧的牛隻比例約為鄰近國家日本的五倍。但台灣許多飼養場都沒有獸醫駐場把關，而是由經營者依經驗照顧管理牛隻，對此吳進隆表示：「若每個飼養場都聘請一位獸醫駐場的話，會額外增加成本使得牧場經營更加困難。」
+
+				獨立酪農個體戶為拓展更多銷售通路而尋求轉型，位於台南的綠光牧場為飲料店「迷客夏」的自營牧場，牧場第二代負責人林建燁為改善酪農業沒落、冬季鮮奶產量過剩及企業收購價格偏低的困境，於民國95年轉型，將牧場與手搖飲料結合，並強調為保留生乳營養而使用低溫殺菌方式，因此創造自己牧場鮮奶的新通路。
+
+				除此之外，位於台北的飲料店「十杯極致手作茶飲」也堅持使用獨立牧場的鮮乳，並與多個獨立牧場配合，從試喝各家酪農個體戶的鮮乳開始，找出比較有不同特色的鮮乳，並搭配自選茶葉的口感。負責人李宏庭認為本土的小農如果沒有行銷和業務推廣的能力，往往只能將鮮乳簽約售給大廠，因 而被迫面臨綁約與接受一些較為吃虧的條件。他也表示透過與獨立酪農戶合作，是希望支持台灣本土酪農，並讓未來新興起的小農們能有更多的自主權，不過他也坦言若只靠他們的努力成效是有限的，「但是帶動店家選擇小農牧場的風氣則是我們可以去影響這個大環境的。」
+
+				</p>
+			</div>
+			
+
+			
+		</article>
+
+		<div class="footer">
+			<a href="file:///Users/iantsai/Desktop/nccufinal/home_page.html#carouselExampleIndicators"><i class="fas fa-graduation-cap"></i><span> NccuNews</span></a>
+		</div>
+	</div>
+	<a href="file:///Users/iantsai/Desktop/nccufinal/home_page.html#carouselExampleIndicators" class="side"><i class="fas fa-home"></i></a>
+
+
+
+
+
+
+
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="cow.js"></script>
+</body>
+</html>

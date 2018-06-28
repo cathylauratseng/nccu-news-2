@@ -1,0 +1,133 @@
+.navbar {
+	display: flex !important;
+}
+.navbar-toggler {
+	width: 30%;
+	border-color: #313233 !important;
+}
+.navbar-nav {
+	background-color: white;
+	border: 6px solid #313233;
+}
+.navbar-nav h3 {
+	text-align: center;
+	color: #d17070;
+	margin-bottom: 10px;
+	font-family: 'Changa One', cursive;
+	font-size: 1.5rem;
+}
+.navbar-nav li a i {
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	margin: 0 20px 0 42%;
+}
+.navbar-nav li a span {
+	font-size: 12px;
+	font-weight: 500;
+	color: #313233;
+}
+.main-container {
+	width: 100%;
+	border-radius: 0;
+	background-color: #f7f7f7;
+}
+.layer {
+	background-color: transparent;
+	border-radius: 0;
+	padding: 20px;
+}
+.top {
+	border: 2px solid #6c757d;
+	background-color: #fff;
+}
+.top-logo, .top-left, .top-right {
+	display: none;
+}
+.top .logo {
+	width: 100%;
+	border: none;
+}
+.head {
+	display: block;
+	background-color: #313233;
+	color: #fff;
+}
+.head .col {
+	width: 100%;
+}
+.head .col a {
+	color: #fff;
+}
+.head .follow-col {
+	display: none;
+}
+.head .input-col {
+	margin-top: 20px;
+}
+.input-col .input-area button {
+	border-color: #fff;
+}
+.img-box {
+	height: 283px !important;
+}
+.paper-area .paper-area-top {
+	display: block !important;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+.paper-area-top .col-8, .paper-area-top .col-4 {
+	width: 100%;
+	max-width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	border-right: none;
+}  
+.paper-area .paper-area-bottom {
+	display: block !important;
+}
+.paper-area-bottom .col-8, .paper-area-bottom .col-4 {
+	width: 100%;
+	max-width: 100%;
+	padding-left: 0;
+	border-left: none;
+}
+.paper-area-top .col-8 .col-8-top, .paper-area-top .col-8 .col-8-bottom {
+	margin-bottom: 3rem;
+}
+.paper-area-bottom .col-8 .col-8-top{
+	margin-bottom: 3rem;
+}
+.col-4 .paper-text {
+	padding-top: 1rem;
+}
+.mobile-member {
+	display: block;
+	text-align: center;
+	border: 1px solid #313233;
+	background-color: #313233;
+	margin-top: 20px;
+	padding: 10px;
+	color: white;
+}
+.mobile-member .title {
+	color: #d17070;
+	margin-bottom: 10px;
+	font-family: 'Changa One', cursive;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
